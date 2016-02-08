@@ -4,7 +4,7 @@ This repository is containing my work from the [Coursera](https://www.coursera.o
 
 ## conFusion:
 
-**conFusion** is the main page the course is mainly focusing on in the assignments. In the first week we created *index.html* and in the assignment of the first week I extended *aboutus.html*.
+**conFusion** is the main page the course is mainly focusing on in the assignments. In the first week we created *index.html* and in the assignment of the first week I extended *aboutus.html*. In the second week we created *contactus.html* and developed others using various **CSS/Bootstrap** designs.
 
 ## Purpose:
 
