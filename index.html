@@ -61,7 +61,7 @@
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <button type="button" class="close">&times;</button>
                   <h4 class="modal-title">Login </h4>
                 </div>
                 <div class="modal-body">
@@ -141,6 +141,14 @@
                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                   </a>
+                  <div class="btn-group" id="carouselButtons">
+                    <button class="btn btn-danger btn-xs" id="carousel-pause">
+                	    <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+                    </button>
+                    <button class="btn btn-danger btn-xs" id="carousel-play">
+                	    <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -198,7 +206,7 @@ creations will tickle your culinary senses!</p>
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <button type="button" class="close">&times;</button>
                         <h4 class="modal-title">Reserve Table</h4>
                     </div>
                     <div class="modal-body">
@@ -229,7 +237,7 @@ creations will tickle your culinary senses!</p>
                             <div class="form-group">
                                 <label for="smoking" class="col-sm-2 control-label">Section</label>
                                 <div class="col-sm-10">
-                                    <div class="btn-group" data-toggle="buttons">
+                                    <div class="btn-group">
                                       <label class="btn btn-success active">
                                         <input type="radio" name="smoking" value="nonsmoking" autocomplete="off" checked> Non-Smoking
                                       </label>
@@ -258,7 +266,7 @@ creations will tickle your culinary senses!</p>
                             </div>
                             <div class="form-group">
                               <div class="col-sm-12 alert alert-warning alert-dismissible" role="alert">
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <button type="button" class="close" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
                                 <strong>Warning:</strong>: Please
@@ -335,6 +343,17 @@ creations will tickle your culinary senses!</p>
             });
             $("#loginCancel").click(function(){
                 $("#loginModal").modal('hide');
+            });
+        });
+</script>
+<script>
+        $(document).ready(function(){
+            $("#mycarousel").carousel( { interval: 2000 } );
+                          $("#carousel-pause").click(function(){
+                $("#mycarousel").carousel('pause');
+            });
+                        $("#carousel-play").click(function(){
+                $("#mycarousel").carousel('cycle');
             });
         });
 </script>
